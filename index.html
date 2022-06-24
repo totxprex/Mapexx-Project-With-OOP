@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mapexx</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="logo.png">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,500&family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,1000&display=swap">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,1000&display=swap"
+    rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+</head>
+
+<body>
+  <p style="position: absolute; z-index:100; padding-top: 10px; font-size: xx-small; padding-left: 10px;">
+    <a style="color: white;" href="https://www.linkedin.com/in/totxprex/" alt="Tolulope Mumuney">
+      Copyright ©️ 2022 <br> Tolulope Mumuney
+    </a>
+
+    <button class="contact">
+      <a style="text-decoration: none;" href="https://www.linkedin.com/in/totxprex/">Contact Developer</a>
+    </button>
+  </p>
+  <main class="allcontent">
+
+    <div class="containerForStat">
+      <center>
+        <img src="logoText.png" height="60px" class="logo">
+      </center>
+
+
+      <div class="eachInputDIv hide">
+        <div class="theInput">
+          <p>Type &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>
+              <select class="input">
+                <option class="runOpt" value="Running">Running</option>
+                <option class="cyclingOpt" value="Cycling">Cycling</option>
+              </select>
+            </span>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <span>
+              Distance &nbsp;&nbsp;
+              <span>
+                <input class="inputDistance" type="number" placeholder="cm">
+                </input>
+              </span>
+            </span>
+          </p>
+
+          <p>Duration &nbsp; <span>
+              <input class="inputDuation" type="number" placeholder="mm">
+              </input>
+            </span>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <span class="cadence_or_stepend">
+              Cadence &nbsp;
+              <span>
+                <input class="inputCadence" type="number" placeholder="steps/min">
+                </input>
+              </span>
+            </span>
+          </p>
+
+        </div>
+      </div>
+
+
+    </div>
+
+    <div id="map">
+
+    </div>
+
+  </main>
+
+</body>
+
+<!-- <script src="index.js"></script> -->
+
+<script src="oopIndex.js"></script>
+
+
+
+
+</html>

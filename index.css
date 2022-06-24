@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+@keyframes stats {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+body {
+  margin: 20px;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+.contact {
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  background-color: rgb(24, 241, 24);
+  border-style: none;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-family: 'Poppins', sans-serif;
+  z-index: 100;
+  top: 50px;
+  margin-left: -90%;
+  border-radius: 10px;
+  font-size: x-small;
+}
+
+.contact:hover {
+  opacity: 1;
+}
+
+.allcontent {
+  display: grid;
+  grid-template-rows: 100px;
+  grid-template-columns: 500px 500px;
+  gap: 5px;
+}
+
+.logo {
+  opacity: 0.2;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  transition: all 7s;
+}
+
+#map {
+  display: grid;
+  grid-template-rows: 100px;
+  grid-template-columns: 500px;
+  width: 820px;
+  height: 590px;
+  overflow: hidden;
+}
+
+.containerForStat {
+  background-color: rgb(37, 35, 35);
+  width: 500px;
+  height: 590px;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+
+
+.eachInputDIv {
+  display: inline-block;
+  border-style: none;
+  border-radius: 10px;
+  background-color: rgb(68, 64, 64);
+  width: 400px;
+  height: 100px;
+  margin: 15px 0px 0px 30px;
+  padding: 3px 15px 2px 20px;
+  color: white;
+  font-size: small;
+  animation-name: stats;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  cursor: pointer;
+
+}
+
+
+.input,
+.inputDistance,
+.inputDuation,
+.inputCadence {
+  width: 90px;
+  height: 28px;
+  border-radius: 5px;
+  padding: 4px;
+  padding-left: 8px;
+  outline: none;
+  border-style: none;
+  opacity: 0.4;
+  transition: all 0.4s;
+}
+
+.input:focus,
+.inputDistance:focus,
+.inputDuation:focus,
+.inputCadence:focus {
+  opacity: 0.8;
+}
+
+
+
+.closemodalbtn:hover {
+  padding: 0.6;
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hide {
+  display: none;
+}
+
+.runningColor {
+  border-left: solid rgb(11, 230, 11);
+}
+
+.cyclingcolor {
+  border-left: solid rgb(33, 11, 230);
+}
+
+
+
+.runningColorMap {
+  border-top: solid rgb(11, 230, 11);
+
+}
+
+.cyclingcolorMap {
+  border-top: solid rgb(33, 11, 230);
+}
